@@ -10,7 +10,11 @@ const RootStack = createStackNavigator<RootStackParamList>();
 const RootStackNavigator: React.FC = () => {
   return (
     <RootStack.Navigator>
-      <RootStack.Screen name="Welcome" component={WelcomeScreen} />
+      <RootStack.Screen
+        name="Welcome"
+        component={WelcomeScreen}
+        options={{ headerTitle: 'Hello!' }}
+      />
     </RootStack.Navigator>
   );
 };
