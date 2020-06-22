@@ -13,7 +13,7 @@ const RootStackNavigator: React.FC = () => {
       <RootStack.Screen
         name="Welcome"
         component={WelcomeScreen}
-        options={{ headerTitle: 'Hello!' }}
+        options={{ headerShown: false }}
       />
     </RootStack.Navigator>
   );
